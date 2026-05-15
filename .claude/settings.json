@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python d:/claude/scripts/update_skills_guide.py",
+            "timeout": 30,
+            "statusMessage": "更新技能文档..."
+          }
+        ]
+      }
+    ]
+  }
+}

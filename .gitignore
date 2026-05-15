@@ -1,0 +1,31 @@
+# 第三方技能包（体积大，有版权限制）
+skills/claude-code/
+skills/skill-router-mcp/
+skills/frontend-design/
+
+# 本地个人配置（含权限、MCP 服务器等敏感信息）
+.claude/settings.local.json
+
+# 个人文档和原型（不属于可复用工具）
+*.html
+*.md.bak
+diet-app/
+knowledge-snip/
+knowledge-snip-backup.tar.gz
+原型图/
+国自然标书/
+比对清单/
+特例单议/
+1.md
+software_copyright_description*.md
+自查自纠操作手册.md
+备份设置说明.md
+icon-preview.html
+医院医保智能审核申诉系统原型.html
+backup_claude_files.ps1
+
+# 系统文件
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
