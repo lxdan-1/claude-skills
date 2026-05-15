@@ -109,10 +109,12 @@ def parse_frontmatter(content):
 
 
 def split_description(description):
-    """Return the Chinese part before 'Use when'."""
+    """Return the Chinese part before 'Use when', or full description if no Chinese prefix."""
     idx = description.find("Use when")
     if idx > 0:
-        return description[:idx].strip()
+        prefix = description[:idx].strip()
+        # If there's a meaningful Chinese prefix, use it; otherwise keep full description
+        return prefix if prefix else description.strip()
     return description.strip()
 
 
