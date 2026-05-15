@@ -60,6 +60,14 @@
 
 ---
 
+### frontend-design
+
+**功能**：Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics.
+
+**调用方式**：`/frontend-design`
+
+---
+
 ### html-prototype-workflow
 
 **功能**：从技术要求文档生成政务/医疗/监管类系统 HTML 交互原型的七步工作流。当用户提供技术要求文档并想生成原型、说"按方法论生成原型"、"帮我走一遍原型工作流"、"根据技术要求生成HTML"时使用。
@@ -170,17 +178,9 @@
 
 ## 内置系统技能
 
-> 以下技能为系统内置，不在 `skills` 目录中，需手动维护。
+> 以下技能为系统内置，不在 `skills` 目录根目录中，需手动维护。
 
-### frontend-design
-
-**功能**：生成有设计感、生产级质量的前端界面，避免通用 AI 审美，适合网页组件、页面和应用开发。
-
-**触发关键词**：前端界面 / 网页组件 / UI设计 / 页面开发 / build web components
-
-**调用方式**：`/frontend-design`
-
----
+### update-config
 
 ### update-config
 

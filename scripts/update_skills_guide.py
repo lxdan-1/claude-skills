@@ -18,7 +18,12 @@ START_MARKER = "<!-- AUTO_UPDATE_START -->"
 END_MARKER = "<!-- AUTO_UPDATE_END -->"
 
 # Skills to skip (not actual skill dirs)
-SKIP_DIRS = {"备份技能", "claude-code", "skill-router-mcp", "frontend-design"}
+SKIP_DIRS = {"备份技能", "claude-code", "skill-router-mcp"}
+
+# Skills whose SKILL.md is nested in a subdirectory (dir/skills/name/SKILL.md)
+NESTED_SKILLS = {
+    "frontend-design": "skills/frontend-design/SKILL.md",
+}
 
 
 def main():
@@ -55,7 +60,13 @@ def scan_skills():
     for skill_dir in sorted(SKILLS_DIR.iterdir()):
         if not skill_dir.is_dir() or skill_dir.name in SKIP_DIRS:
             continue
-        skill_md = skill_dir / "SKILL.md"
+
+        # Handle nested SKILL.md paths (e.g. frontend-design/skills/frontend-design/SKILL.md)
+        if skill_dir.name in NESTED_SKILLS:
+            skill_md = skill_dir / NESTED_SKILLS[skill_dir.name]
+        else:
+            skill_md = skill_dir / "SKILL.md"
+
         if not skill_md.exists():
             continue
 

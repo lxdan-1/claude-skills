@@ -1,7 +1,6 @@
 # 第三方技能包（体积大，有版权限制）
 skills/claude-code/
 skills/skill-router-mcp/
-skills/frontend-design/
 
 # 本地个人配置（含权限、MCP 服务器等敏感信息）
 .claude/settings.local.json
