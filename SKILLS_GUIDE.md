@@ -33,7 +33,7 @@
 | 操作手册生成 | `/操作手册生成` | 操作手册、截图生成手册 | 从截图生成操作文档 |
 | html-prototype-workflow | `/html-prototype-workflow` | 按方法论生成原型、七步工作流 | 政务/医疗系统HTML原型 |
 | brainstorming | `/brainstorming` | 创意工作前（自动触发） | 创意和功能设计前置分析 |
-| frontend-design | `/frontend-design` | 前端界面、网页组件、UI设计 | 生成高质量前端代码 |
+| frontend-design | `/frontend-design` | build web components, pages, applications | 生成高质量前端代码 |
 | update-config | `/update-config` | 配置设置、自动化行为、权限 | 修改settings.json配置 |
 | keybindings-help | `/keybindings-help` | 快捷键、键位绑定 | 自定义键盘快捷键 |
 | simplify | `/simplify` | 代码简化、代码质量 | 检查并简化代码 |
